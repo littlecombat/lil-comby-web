@@ -1,0 +1,45 @@
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+@font-face { font-family: digicastle; src: url(fnt/DigiCastle.ttf); }
+@font-face { font-family: rainy; src: url(fnt/rainyhearts.ttf); }
+
+
+
+h1 {
+  /* font-family: 'Shrikhand', cursive !important; */
+  font-family: 'digicastle', monospace !important;
+  text-shadow: 2px 2px #fae3fb;
+  -webkit-font-smoothing : none;
+}
+
+body {
+  font-family: 'rainy', courier !important;
+  font-size: 16px;
+  -webkit-font-smoothing : none;
+}
+
+a:link,a:visited { text-decoration: none; color: black; }
+
+.coolimg { width:200px; content:url('img/me_lino2.gif')}
+.coolimg:hover { width:200px; content:url('img/me_reg2.gif')}
+
+
+
+
+@media screen and (max-width:767px) {
+  h1{ text-align:center; }
+  h2{ font-size:16px; }
+  .coolimg{ align-content: center; }
+  .mynav{ font-size: 24px; text-align:center; margin-top:-20px;}
+}
+
+@media screen and (min-width:768px) {
+  h1{ text-align:left; }
+  h2{ font-size:24px; }
+  .coolimg{float:right;}
+  .mynav{font-size: 16px;text-align:left;margin-top:-24px;margin-bottom:24px;}
+}
